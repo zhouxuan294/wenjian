@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>git基本操作过程2：</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="656"/>
+<h1>git基本操作过程2：</h1>
+
+<div><span lang="v2" style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=338f96d6-8c21-4885-886a-3d0315cb70bf&amp;notebook=%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%AC%94%E8%AE%B0%E6%9C%AC" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6;">
+                        
+                    
+
+
+
+<h1 style="font-size: 41.6px; margin: 1.2em 0 .6em 0; font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; text-align: start;">git基本操作过程2：</h1>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">1、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">git clone https://xxx</code>把远程库克隆一份到本地：</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.git clone.png" type="image/png" data-filename="./git clone.png" alt="Alt text" longdesc="./git clone.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">https://xxx</code>是对应的远程库的链接：<img src="git基本操作过程2：_files/.copyAddress.png" type="image/png" data-filename="./copyAddress.png" alt="Alt text" longdesc="./copyAddress.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">2、克隆后的得到的本地库，默认桥梁是<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">origin</code>，此后在这个本地库中push和pull时，可以省略后边的桥梁名和分支名，世界输入<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">git push</code>和<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">git pull</code>。</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.git push.png" type="image/png" data-filename="./git push.png" alt="Alt text" longdesc="./git push.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">git remote -v</code>查看链接：</p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.git remote -v.png" type="image/png" data-filename="./git remote -v.png" alt="Alt text" longdesc="./git remote -v.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+3、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">mkdir xxx</code>新建文件夹：</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.mkdir.png" type="image/png" data-filename="./mkdir.png" alt="Alt text" longdesc="./mkdir.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+4、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">touch xxx.xxx</code>新建文件：</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.touch.png" type="image/png" data-filename="./touch.png" alt="Alt text" longdesc="./touch.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+5、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">vi xxx.xxx</code>修改文件：</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.vi.png" type="image/png" data-filename="./vi.png" alt="Alt text" longdesc="./vi.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.write.png" type="image/png" data-filename="./write.png" alt="Alt text" longdesc="./write.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+进入如上图所示的界面后，点击<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">i</code>，然后进行编辑；编辑完成后，按<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">esc</code>退出编辑状态，再在英文输入法状态下输入<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">:wq</code>，退出该文件。</p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.quit.png" type="image/png" data-filename="./quit.png" alt="Alt text" longdesc="./quit.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+6、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">cat xxx</code>查看文件内容：</p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.cat.png" type="image/png" data-filename="./cat.png" alt="Alt text" longdesc="./cat.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+7、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">cd 文件夹路径</code>直接进入对应的文件夹：</p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.cd_1.png" type="image/png" data-filename="./cd_1.png" alt="Alt text" longdesc="./cd_1.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/> <br/>
+8、<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">cd ..</code>或者<code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">cd ../</code>返回上一级文件夹：</p>
+
+
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><img src="git基本操作过程2：_files/.cd_2.png" type="image/png" data-filename="./cd_2.png" alt="Alt text" longdesc="./cd_2.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23git%u57FA%u672C%u64CD%u4F5C%u8FC7%u7A0B2%uFF1A%0A1%u3001%60git%20clone%20https%3A//xxx%60%u628A%u8FDC%u7A0B%u5E93%u514B%u9686%u4E00%u4EFD%u5230%u672C%u5730%uFF1A%0A%21%5BAlt%20text%5D%28./git%20clone.png%29%0A%60https%3A//xxx%60%u662F%u5BF9%u5E94%u7684%u8FDC%u7A0B%u5E93%u7684%u94FE%u63A5%uFF1A%21%5BAlt%20text%5D%28./copyAddress.png%29%0A%0A2%u3001%u514B%u9686%u540E%u7684%u5F97%u5230%u7684%u672C%u5730%u5E93%uFF0C%u9ED8%u8BA4%u6865%u6881%u662F%60origin%60%uFF0C%u6B64%u540E%u5728%u8FD9%u4E2A%u672C%u5730%u5E93%u4E2Dpush%u548Cpull%u65F6%uFF0C%u53EF%u4EE5%u7701%u7565%u540E%u8FB9%u7684%u6865%u6881%u540D%u548C%u5206%u652F%u540D%uFF0C%u4E16%u754C%u8F93%u5165%60git%20push%60%u548C%60git%20pull%60%u3002%0A%21%5BAlt%20text%5D%28./git%20push.png%29%0A%60git%20remote%20-v%60%u67E5%u770B%u94FE%u63A5%uFF1A%0A%21%5BAlt%20text%5D%28./git%20remote%20-v.png%29%0A3%u3001%60mkdir%20xxx%60%u65B0%u5EFA%u6587%u4EF6%u5939%uFF1A%0A%21%5BAlt%20text%5D%28./mkdir.png%29%0A4%u3001%60touch%20xxx.xxx%60%u65B0%u5EFA%u6587%u4EF6%uFF1A%0A%21%5BAlt%20text%5D%28./touch.png%29%0A5%u3001%60vi%20xxx.xxx%60%u4FEE%u6539%u6587%u4EF6%uFF1A%0A%21%5BAlt%20text%5D%28./vi.png%29%0A%21%5BAlt%20text%5D%28./write.png%29%0A%u8FDB%u5165%u5982%u4E0A%u56FE%u6240%u793A%u7684%u754C%u9762%u540E%uFF0C%u70B9%u51FB%60i%60%uFF0C%u7136%u540E%u8FDB%u884C%u7F16%u8F91%uFF1B%u7F16%u8F91%u5B8C%u6210%u540E%uFF0C%u6309%60esc%60%u9000%u51FA%u7F16%u8F91%u72B6%u6001%uFF0C%u518D%u5728%u82F1%u6587%u8F93%u5165%u6CD5%u72B6%u6001%u4E0B%u8F93%u5165%60%3Awq%60%uFF0C%u9000%u51FA%u8BE5%u6587%u4EF6%u3002%0A%21%5BAlt%20text%5D%28./quit.png%29%0A6%u3001%60cat%20xxx%60%u67E5%u770B%u6587%u4EF6%u5185%u5BB9%uFF1A%0A%21%5BAlt%20text%5D%28./cat.png%29%0A7%u3001%60cd%20%u6587%u4EF6%u5939%u8DEF%u5F84%60%u76F4%u63A5%u8FDB%u5165%u5BF9%u5E94%u7684%u6587%u4EF6%u5939%uFF1A%0A%21%5BAlt%20text%5D%28./cd_1.png%29%0A8%u3001%60cd%20..%60%u6216%u8005%60cd%20../%60%u8FD4%u56DE%u4E0A%u4E00%u7EA7%u6587%u4EF6%u5939%uFF1A%0A%21%5BAlt%20text%5D%28./cd_2.png%29%0A%0A</center><br/></span>
+</div></body></html> 

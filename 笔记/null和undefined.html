@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>null和undefined</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="508"/>
+<h1>null和undefined</h1>
+
+<div><span lang="v2" style="color: #2c3f51; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=4688a612-d8da-4c73-9254-63fb4f13d470&amp;notebook=" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; line-height: 1.6;">
+                        
+                    
+
+
+
+<h1 style="font-size: 41.6px; margin: 1.2em 0 .6em 0; font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; text-align: start;">null和undefined</h1>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">null</code>：是现在没有，以后会有。空指针对象。</li>
+<li style="line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">undefined</code>：压根没有，现在没有，以后也没有。</li>
+<li style="line-height: 1.6;">判断数据类型（用typeof）：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">例：
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> a=<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">12</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> a);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//number</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> b=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'qwer'</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> b);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//string</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> c=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'true'</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> c);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//string</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> d=<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">true</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> d);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//boolean</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> e=!<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">true</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> e);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//boolean</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> <span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">undefined</span>);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//undefined</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> <span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">null</span>);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//object</span>
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> <span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">typeof</span> <span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">12</span>);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//string</span>
+</div></code></pre></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23null%u548Cundefined%0A-%20%60null%60%uFF1A%u662F%u73B0%u5728%u6CA1%u6709%uFF0C%u4EE5%u540E%u4F1A%u6709%u3002%u7A7A%u6307%u9488%u5BF9%u8C61%u3002%0A-%20%60undefined%60%uFF1A%u538B%u6839%u6CA1%u6709%uFF0C%u73B0%u5728%u6CA1%u6709%uFF0C%u4EE5%u540E%u4E5F%u6CA1%u6709%u3002%0A-%20%u5224%u65AD%u6570%u636E%u7C7B%u578B%uFF08%u7528typeof%uFF09%uFF1A%0A%0A%20%20%20%20%u4F8B%uFF1A%0A%20%20%20%20var%20a%3D12%3B%0A%20%20%20%20console.log%28typeof%20a%29%3B//number%0A%20%20%20%20var%20b%3D%27qwer%27%3B%0A%20%20%20%20console.log%28typeof%20b%29%3B//string%0A%20%20%20%20var%20c%3D%27true%27%3B%0A%20%20%20%20console.log%28typeof%20c%29%3B//string%0A%20%20%20%20var%20d%3Dtrue%3B%0A%20%20%20%20console.log%28typeof%20d%29%3B//boolean%0A%20%20%20%20var%20e%3D%21true%3B%0A%20%20%20%20console.log%28typeof%20e%29%3B//boolean%0A%20%20%20%20console.log%28typeof%20undefined%29%3B//undefined%0A%20%20%20%20console.log%28typeof%20null%29%3B//object%0A%20%20%20%20console.log%28typeof%20typeof%2012%29%3B//string%0A%0A</center><br/></span>
+</div></body></html> 

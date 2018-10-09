@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>JS盒子模型：</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="739"/>
+<h1>JS盒子模型：</h1>
+
+<div><span lang="v2" style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=5cb297ad-9c2a-47ed-99fd-4a446948542e&amp;notebook=" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6;">
+                        
+                    
+
+
+
+<h1 style="font-size: 41.6px; margin: 1.2em 0 .6em 0; font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; text-align: start;">JS盒子模型：</h1>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">css盒子模型的几个属性： <br/>
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;">
+  <li style="line-height: 1.6;">width：宽度</li>
+  <li style="line-height: 1.6;">height：高度</li>
+  <li style="line-height: 1.6;">padding：内边距</li>
+  <li style="line-height: 1.6;">border：边框</li>
+  <li style="line-height: 1.6;">margin：外边距 <br/>
+  （width、height、padding和border会影响盒子的实际大小）</li></ul></li>
+  </ul>
+</blockquote>
+
+<hr style="-moz-box-sizing: content-box; box-sizing: content-box; height: 0; margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid rgba(102,128,153,0.1); margin: 2em 0; line-height: 1.6;"/>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">JS盒子模型的几个属性： <br/>
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;">
+  <li style="line-height: 1.6;">clientHeight=height+padding-top+padding-bottom</li>
+  <li style="line-height: 1.6;">clientLeft=border-left</li>
+  <li style="line-height: 1.6;">clientTop=border-top</li>
+  <li style="line-height: 1.6;">clientWidth=width+padding-right+padding-left</li>
+  <li style="line-height: 1.6;">offsetHeight=clientHeight+border-top+border-bottom</li>
+  <li style="line-height: 1.6;">offsetLeft=当前元素外左边框距离上级参照物内左边框的距离</li>
+  <li style="line-height: 1.6;">offsetTop=当前元素外上边框距离上级参照物内上边框的距离</li>
+  <li style="line-height: 1.6;">offsetWidth=clientWidth+border-right+border-left</li>
+  <li style="line-height: 1.6;">offsetParent：上级参照物，有定位的父级元素，没有定位的父级元素的话，就是body</li>
+  <li style="line-height: 1.6;">scrollHeight：元素内容没有溢出时，等于clientHeight；元素内容有溢出时，等于padding-top+真实内容高度（包括溢出部分），此时若设置了overflow：hidden的话，等于padding-top+padding-bottom+真实内容高度（包括溢出部分）</li>
+  <li style="line-height: 1.6;">scrollLeft：滚动条卷过去的宽度</li>
+  <li style="line-height: 1.6;">scrollTop：滚动条卷上去的高度</li>
+  <li style="line-height: 1.6;">scrollWidth：元素内容没有溢出时，等于clientWidth；元素内容有溢出时，等于padding-left+真实内容高度（包括溢出部分），此时若设置了overflow：hidden的话，等于padding-left+padding-right+真实内容高度（包括溢出部分） <br/>
+  <code style="font-family: 'Source Code Pro',Consolas,monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;">以上属性中，除了offsetParent，只有scrollTop和scrollLeft是可读写的，其他都是只读</code></li></ul></li>
+  </ul>
+</blockquote></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23JS%u76D2%u5B50%u6A21%u578B%uFF1A%0A%3E%20-%20css%u76D2%u5B50%u6A21%u578B%u7684%u51E0%u4E2A%u5C5E%u6027%uFF1A%0A%3E%20%20%20%20-%20width%uFF1A%u5BBD%u5EA6%0A%3E%20%20%20%20-%20height%uFF1A%u9AD8%u5EA6%0A%3E%20%20%20%20-%20padding%uFF1A%u5185%u8FB9%u8DDD%0A%3E%20%20%20%20-%20border%uFF1A%u8FB9%u6846%0A%3E%20%20%20%20-%20margin%uFF1A%u5916%u8FB9%u8DDD%0A%3E%20%20%20%20%uFF08width%u3001height%u3001padding%u548Cborder%u4F1A%u5F71%u54CD%u76D2%u5B50%u7684%u5B9E%u9645%u5927%u5C0F%uFF09%0A%0A---%0A%3E%20-%20JS%u76D2%u5B50%u6A21%u578B%u7684%u51E0%u4E2A%u5C5E%u6027%uFF1A%0A%3E%20%20%20%20-%20clientHeight%3Dheight+padding-top+padding-bottom%0A%3E%20%20%20%20-%20clientLeft%3Dborder-left%0A%3E%20%20%20%20-%20clientTop%3Dborder-top%0A%3E%20%20%20%20-%20clientWidth%3Dwidth+padding-right+padding-left%0A%3E%20%20%20%20-%20offsetHeight%3DclientHeight+border-top+border-bottom%0A%3E%20%20%20%20-%20offsetLeft%3D%u5F53%u524D%u5143%u7D20%u5916%u5DE6%u8FB9%u6846%u8DDD%u79BB%u4E0A%u7EA7%u53C2%u7167%u7269%u5185%u5DE6%u8FB9%u6846%u7684%u8DDD%u79BB%0A%3E%20%20%20%20-%20offsetTop%3D%u5F53%u524D%u5143%u7D20%u5916%u4E0A%u8FB9%u6846%u8DDD%u79BB%u4E0A%u7EA7%u53C2%u7167%u7269%u5185%u4E0A%u8FB9%u6846%u7684%u8DDD%u79BB%0A%3E%20%20%20%20-%20offsetWidth%3DclientWidth+border-right+border-left%0A%3E%20%20%20%20-%20offsetParent%uFF1A%u4E0A%u7EA7%u53C2%u7167%u7269%uFF0C%u6709%u5B9A%u4F4D%u7684%u7236%u7EA7%u5143%u7D20%uFF0C%u6CA1%u6709%u5B9A%u4F4D%u7684%u7236%u7EA7%u5143%u7D20%u7684%u8BDD%uFF0C%u5C31%u662Fbody%0A%3E%20%20%20%20-%20scrollHeight%uFF1A%u5143%u7D20%u5185%u5BB9%u6CA1%u6709%u6EA2%u51FA%u65F6%uFF0C%u7B49%u4E8EclientHeight%uFF1B%u5143%u7D20%u5185%u5BB9%u6709%u6EA2%u51FA%u65F6%uFF0C%u7B49%u4E8Epadding-top+%u771F%u5B9E%u5185%u5BB9%u9AD8%u5EA6%uFF08%u5305%u62EC%u6EA2%u51FA%u90E8%u5206%uFF09%uFF0C%u6B64%u65F6%u82E5%u8BBE%u7F6E%u4E86overflow%uFF1Ahidden%u7684%u8BDD%uFF0C%u7B49%u4E8Epadding-top+padding-bottom+%u771F%u5B9E%u5185%u5BB9%u9AD8%u5EA6%uFF08%u5305%u62EC%u6EA2%u51FA%u90E8%u5206%uFF09%0A%3E%20%20%20%20-%20scrollLeft%uFF1A%u6EDA%u52A8%u6761%u5377%u8FC7%u53BB%u7684%u5BBD%u5EA6%0A%3E%20%20%20%20-%20scrollTop%uFF1A%u6EDA%u52A8%u6761%u5377%u4E0A%u53BB%u7684%u9AD8%u5EA6%0A%3E%20%20%20%20-%20scrollWidth%uFF1A%u5143%u7D20%u5185%u5BB9%u6CA1%u6709%u6EA2%u51FA%u65F6%uFF0C%u7B49%u4E8EclientWidth%uFF1B%u5143%u7D20%u5185%u5BB9%u6709%u6EA2%u51FA%u65F6%uFF0C%u7B49%u4E8Epadding-left+%u771F%u5B9E%u5185%u5BB9%u9AD8%u5EA6%uFF08%u5305%u62EC%u6EA2%u51FA%u90E8%u5206%uFF09%uFF0C%u6B64%u65F6%u82E5%u8BBE%u7F6E%u4E86overflow%uFF1Ahidden%u7684%u8BDD%uFF0C%u7B49%u4E8Epadding-left+padding-right+%u771F%u5B9E%u5185%u5BB9%u9AD8%u5EA6%uFF08%u5305%u62EC%u6EA2%u51FA%u90E8%u5206%uFF09%0A%60%u4EE5%u4E0A%u5C5E%u6027%u4E2D%uFF0C%u9664%u4E86offsetParent%uFF0C%u53EA%u6709scrollTop%u548CscrollLeft%u662F%u53EF%u8BFB%u5199%u7684%uFF0C%u5176%u4ED6%u90FD%u662F%u53EA%u8BFB%60%0A</center><br/></span>
+</div></body></html> 

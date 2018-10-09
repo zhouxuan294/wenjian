@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>js的引入方式：</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="493"/>
+<h1>js的引入方式：</h1>
+
+<div><span lang="v2" style="color: #2c3f51; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=ce772108-52a9-4413-975e-0b06bd2eb585&amp;notebook=" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; line-height: 1.6;">
+                        
+                    
+
+
+
+<h1 style="font-size: 41.6px; margin: 1.2em 0 .6em 0; font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; text-align: start;">js的引入方式：</h1>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">行内式（优先级比较高）：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">&lt;<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">div</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">id</span>=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">&quot;div1&quot;</span> onclick=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">&quot;alert(珠峰培训)&quot;</span>&gt;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    珠峰培训
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">&lt;/<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">div</span>&gt;
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code></p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">内嵌式（这种写法只有在标准浏览器中支持，低版本浏览器不支持）：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">&lt;<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">script</span>&gt;</span><span style="display: inline; line-height: 1.6; background-color: transparent;">
+</span></div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    div1.onclick = <span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #66d9ef; background-color: transparent;">function</span><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">()</span></span>{
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">        alert(<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">1</span>);
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">        }
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">&lt;/<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">script</span>&gt;</span>
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code>            </p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">外链式：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">&lt;<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">script</span> <span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">src</span>=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">&quot;js文件链接地址&quot;</span>&gt;</span><span style="display: inline; line-height: 1.6; background-color: transparent;"></span><span style="display: inline; line-height: 1.6; color: #f8f8f2; background-color: transparent;">&lt;/<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">script</span>&gt;</span>
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code>    </p></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23js%u7684%u5F15%u5165%u65B9%u5F0F%uFF1A%0A-%20%u884C%u5185%u5F0F%uFF08%u4F18%u5148%u7EA7%u6BD4%u8F83%u9AD8%uFF09%uFF1A%0A%0A%20%20%20%20%3Cdiv%20id%3D%22div1%22%20onclick%3D%22alert%28%u73E0%u5CF0%u57F9%u8BAD%29%22%3E%0A%20%20%20%20%20%20%20%20%u73E0%u5CF0%u57F9%u8BAD%0A%20%20%20%20%3C/div%3E%0A%60%20%60%0A-%20%u5185%u5D4C%u5F0F%uFF08%u8FD9%u79CD%u5199%u6CD5%u53EA%u6709%u5728%u6807%u51C6%u6D4F%u89C8%u5668%u4E2D%u652F%u6301%uFF0C%u4F4E%u7248%u672C%u6D4F%u89C8%u5668%u4E0D%u652F%u6301%uFF09%uFF1A%0A%0A%20%20%20%20%3Cscript%3E%0A%20%20%20%20%20%20%20%20div1.onclick%20%3D%20function%28%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20alert%281%29%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%3C/script%3E%0A%60%20%60%20%20%20%20%20%20%20%20%20%20%20%20%0A-%20%u5916%u94FE%u5F0F%uFF1A%0A%0A%20%20%20%20%3Cscript%20src%3D%22js%u6587%u4EF6%u94FE%u63A5%u5730%u5740%22%3E%3C/script%3E%0A%60%20%60%20%20%20%20%0A%20%20%20%20</center><br/></span>
+</div></body></html> 

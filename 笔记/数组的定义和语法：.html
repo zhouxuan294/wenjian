@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title>数组的定义和语法：</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="547"/>
+<h1>数组的定义和语法：</h1>
+
+<div><span lang="v2" style="color: #2c3f51; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=d5d0c720-cf6b-43c0-a691-bd0ee33036ae&amp;notebook=" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; line-height: 1.6;">
+                        
+                    
+
+
+
+<h1 style="font-size: 41.6px; margin: 1.2em 0 .6em 0; font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; text-align: start;">数组的定义和语法：</h1>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">数组对象是使用单独的变量名来存储一系列的值。数组的每一项都有一个属性名（数组本身就是一个对象，他只是对象的一个细分）跟他对应，这里的属性名（依次递增的数字）叫索引；数组的每一项可以是任意数据类型。</li>
+<li style="line-height: 1.6;">创建一个数组：</li>
+</ul>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">1.常规方式：</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> myCars=<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">new</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">Array</span>();
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">myCars[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">0</span>]=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Saab'</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">myCars[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">1</span>]=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Volvo'</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">myCars[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">2</span>]=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'BMW'</span>;
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code> <br/>
+2.简洁方式：</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> myCars=<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">new</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">Array</span>(<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Saab'</span>,<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">&quot;Volvo&quot;</span>,<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'BMW'</span>);
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code></p>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;">3.字面 :</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var myCars</span>=[<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Saab'</span>,<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Volvo'</span>,<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'BMW'</span>];
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code></p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">访问查看数组（通过指定数组名以及索引号码）：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> <span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">name</span>=myCars[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">0</span>];
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">myCars[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">0</span>]=<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">'Opel'</span>;(修改了第一个元素)
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code> <br/>
+1.for/in循环查看数组：</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">for</span>(<span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> k <span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">in</span> ary){
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(ary[k]);
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    }
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code> <br/>
+2.for循环查看数组：</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">for</span>(var <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">i</span>=<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">0</span>;<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">i</span>&lt;ary.<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">length</span>;<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">i</span>++){
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    console.log(ary[k]);
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    }
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code> <br/>
+3.while循环查看数组：</p>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">var</span> <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">n</span>=<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">0</span>;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">while(<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">n</span>&lt;ary.length){
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    console.log(ary[<span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">n</span>]);
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    <span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">n</span>++;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;">    }
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code></p>
+
+<ul style="margin-top: 0; margin-bottom: 1.1em; line-height: 1.6;"><li style="line-height: 1.6;">数组中元素数量的查看：</li>
+</ul>
+
+<pre style="font-family: 'Source Code Pro',monospace; white-space: pre-wrap; display: block; background-color: rgba(102,128,153,0.05); color: #333; word-wrap: break-word; font-size: .9em; background: #f6f6f6; line-height: 1.6; margin: 0 0 1.1em; padding: 0; border: 0; border-radius: 5px; text-align: start; word-break: break-all;"><code style="font-family: 'Source Code Pro',monospace; font-size: inherit; background-color: transparent; white-space: pre-wrap; border-radius: 0; color: #f8f8f2; display: block; overflow-x: auto; background: #23241f; padding: 1.3em 2em;"><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> ary=[<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">1</span>,<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">2</span>,<span style="display: inline; line-height: 1.6; color: #ae81ff; background-color: transparent;">3</span>,a,b,c];
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #f92672; background-color: transparent;">var</span> a=ary.length;
+</div><div style="min-height: 1.5em; color: inherit; line-height: 1.6; background-color: transparent;"><span style="display: inline; line-height: 1.6; color: #e6db74; background-color: transparent;">console</span>.log(a);<span style="display: inline; line-height: 1.6; color: #75715e; background-color: transparent;">//6</span>
+</div></code></pre>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><code style="font-family: 'Source Code Pro',monospace; font-size: .9em; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; white-space: normal; border-radius: 4px;"></code></p></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%u6570%u7EC4%u7684%u5B9A%u4E49%u548C%u8BED%u6CD5%uFF1A%0A-%20%u6570%u7EC4%u5BF9%u8C61%u662F%u4F7F%u7528%u5355%u72EC%u7684%u53D8%u91CF%u540D%u6765%u5B58%u50A8%u4E00%u7CFB%u5217%u7684%u503C%u3002%u6570%u7EC4%u7684%u6BCF%u4E00%u9879%u90FD%u6709%u4E00%u4E2A%u5C5E%u6027%u540D%uFF08%u6570%u7EC4%u672C%u8EAB%u5C31%u662F%u4E00%u4E2A%u5BF9%u8C61%uFF0C%u4ED6%u53EA%u662F%u5BF9%u8C61%u7684%u4E00%u4E2A%u7EC6%u5206%uFF09%u8DDF%u4ED6%u5BF9%u5E94%uFF0C%u8FD9%u91CC%u7684%u5C5E%u6027%u540D%uFF08%u4F9D%u6B21%u9012%u589E%u7684%u6570%u5B57%uFF09%u53EB%u7D22%u5F15%uFF1B%u6570%u7EC4%u7684%u6BCF%u4E00%u9879%u53EF%u4EE5%u662F%u4EFB%u610F%u6570%u636E%u7C7B%u578B%u3002%0A-%20%u521B%u5EFA%u4E00%u4E2A%u6570%u7EC4%uFF1A%0A%0A1.%u5E38%u89C4%u65B9%u5F0F%uFF1A%0A%20%0A%20%20%20%20var%20myCars%3Dnew%20Array%28%29%3B%0A%20%20%20%20myCars%5B0%5D%3D%27Saab%27%3B%0A%20%20%20%20myCars%5B1%5D%3D%27Volvo%27%3B%0A%20%20%20%20myCars%5B2%5D%3D%27BMW%27%3B%0A%60%20%60%0A2.%u7B80%u6D01%u65B9%u5F0F%uFF1A%0A%0A%20%20%20%20var%20myCars%3Dnew%20Array%28%27Saab%27%2C%22Volvo%22%2C%27BMW%27%29%3B%0A%60%20%60%0A%20%20%20%0A3.%u5B57%u9762%20%3A%0A%0A%20%20%20%20var%20myCars%3D%5B%27Saab%27%2C%27Volvo%27%2C%27BMW%27%5D%3B%0A%60%20%60%0A-%20%u8BBF%u95EE%u67E5%u770B%u6570%u7EC4%uFF08%u901A%u8FC7%u6307%u5B9A%u6570%u7EC4%u540D%u4EE5%u53CA%u7D22%u5F15%u53F7%u7801%uFF09%uFF1A%0A%0A%20%20%20%20var%20name%3DmyCars%5B0%5D%3B%0A%20%20%20%20myCars%5B0%5D%3D%27Opel%27%3B%28%u4FEE%u6539%u4E86%u7B2C%u4E00%u4E2A%u5143%u7D20%29%0A%60%20%60%0A1.for/in%u5FAA%u73AF%u67E5%u770B%u6570%u7EC4%uFF1A%0A%0A%20%20%20%20for%28var%20k%20in%20ary%29%7B%0A%20%20%20%20%20%20%20%20console.log%28ary%5Bk%5D%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%60%20%60%0A2.for%u5FAA%u73AF%u67E5%u770B%u6570%u7EC4%uFF1A%0A%0A%20%20%20%20for%28var%20i%3D0%3Bi%3Cary.length%3Bi++%29%7B%0A%20%20%20%20%20%20%20%20console.log%28ary%5Bk%5D%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%60%20%60%0A3.while%u5FAA%u73AF%u67E5%u770B%u6570%u7EC4%uFF1A%0A%0A%20%20%20%20var%20n%3D0%3B%0A%20%20%20%20while%28n%3Cary.length%29%7B%0A%20%20%20%20%20%20%20%20console.log%28ary%5Bn%5D%29%3B%0A%20%20%20%20%20%20%20%20n++%3B%0A%20%20%20%20%20%20%20%20%7D%0A%60%20%60%0A-%20%u6570%u7EC4%u4E2D%u5143%u7D20%u6570%u91CF%u7684%u67E5%u770B%uFF1A%0A%0A%20%20%20%20var%20ary%3D%5B1%2C2%2C3%2Ca%2Cb%2Cc%5D%3B%0A%20%20%20%20var%20a%3Dary.length%3B%0A%20%20%20%20console.log%28a%29%3B//6%0A%60%20%60%0A%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%0A%0A%20%20%20%20%0A%0A%20%20%0A%0A%20%20%20%20%0A%20%20%20%20</center><br/></span>
+</div></body></html> 

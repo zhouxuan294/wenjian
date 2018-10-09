@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>GIT</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/600240 (zh-CN, DDL); Windows/10.0.0 (Win64);"/>
+  <meta name="content-class" content="maxiang"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="891"/>
+<h1>GIT</h1>
+
+<div><span lang="v2" style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6; background: none;"><del style="position:relative;display:block;z-index:10;"><a href="http://maxiang.io/#/?provider=evernote&amp;guid=1cd63784-0630-4c43-a646-1a9de494e87b&amp;notebook=" style="position: absolute;color: #FFF;text-decoration: none;font-size: 12px;height: 25px;border-radius: 0;margin-top: -20px;right: 15px;background: rgba(0, 0, 0, 0);border-left: 10px solid #BB3A34;border-right: 10px solid #BB3A34;border-bottom: 5px solid rgba(0, 0, 0, 0);width: 0;text-indent:-100000px;">Edit</a></del><div style="color: #2c3f51; font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif; line-height: 1.6;">
+                        
+                    
+
+<h2 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 21px; margin-bottom: 10.5px; font-size: 34.4px; margin: 1.2em 0 .6em 0; text-align: start;">GIT</h2>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><strong style="font-weight: bold; line-height: 1.6;">常见的Linux命令</strong></p>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">mkdir xxx【创建文件夹，命名为XXX】</li>
+  <li style="line-height: 1.6;">touch xxx.txt【创建格式为txt的文件，命名为XXX】</li>
+  <li style="line-height: 1.6;">cd xxx【进入xxx文件夹】</li>
+  <li style="line-height: 1.6;">cd ../【返回上一级目录】</li>
+  <li style="line-height: 1.6;">cd /【返回根目录】</li>
+  <li style="line-height: 1.6;">cd ../../【返回上一级的上一级】</li>
+  <li style="line-height: 1.6;">vi xxx.txt【进入文件编辑界面】→ 输入英文字母“ i ”，然后进行编辑 → 编辑完成后，CTRL+c，退出编辑状态 → 输入“ :wq ”，保存并退出编辑界面</li>
+  <li style="line-height: 1.6;">cat xxx.txt【查看文件内容】</li>
+  </ul>
+</blockquote>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><strong style="font-weight: bold; line-height: 1.6;">git的常用命令</strong></p>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">git init【初始化一个本地仓库】</li>
+  <li style="line-height: 1.6;">git config –list【查看本地仓库的基本配置信息】</li>
+  <li style="line-height: 1.6;">git config –global user.name “xxx”【配置全局的用户名】</li>
+  <li style="line-height: 1.6;">git config –global user.email “xxx”【配置全局的用户邮箱】</li>
+  <li style="line-height: 1.6;">clear【清屏】</li>
+  <li style="line-height: 1.6;">git status【查看当前仓库文件状态（工作区的文件是红色，暂存区的文件是绿色）】</li>
+  <li style="line-height: 1.6;">git rm –cached xxx.txt【删除暂存区对应的文件】</li>
+  <li style="line-height: 1.6;">git add .【把工作区的文件提交到暂存区】</li>
+  <li style="line-height: 1.6;">git commit -m “备注”【把暂存区的文件提交到历史区；每次向历史区提交文件的时候，都会产生一个唯一的版本号】</li>
+  <li style="line-height: 1.6;">git diff【对比工作区和暂存区的文件内容】</li>
+  <li style="line-height: 1.6;">git checkout xxx.txt【把暂存区的文件覆盖工作区（暂存区的文件不变）】</li>
+  <li style="line-height: 1.6;">git log【查看历史区文件的版本号】</li>
+  <li style="line-height: 1.6;">git diff –cached【对比暂存区和历史区的文件内容】</li>
+  <li style="line-height: 1.6;">git diff master【对比工作区和历史区的文件内容】</li>
+  <li style="line-height: 1.6;">git reset –hard 版本号【将三个区的文件统一为该版本号对应的版本文件】</li>
+  <li style="line-height: 1.6;">git commit -a -m “备注”【连续执行工作区提交到暂存区、暂存区提交到历史区（该命令只能用于提交过的文件）】</li>
+  <li style="line-height: 1.6;">git reflog【查看所有的版本号】</li>
+  </ul>
+</blockquote>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><strong style="font-weight: bold; line-height: 1.6;">git有三个区</strong></p>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">工作区</li>
+  <li style="line-height: 1.6;">暂存区</li>
+  <li style="line-height: 1.6;">历史区</li>
+  </ul>
+</blockquote>
+
+<p style="margin: 0 0 1.1em; line-height: 1.6;"><strong style="font-weight: bold; line-height: 1.6;">git的分支</strong></p>
+
+<blockquote style="padding: 15px 20px; margin: 0 0 1.1em; border-left: 5px solid rgba(102,128,153,0.075); border-left-width: 10px; background-color: rgba(102,128,153,0.05); border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+  <ul style="margin-top: 0; margin-bottom: 0; line-height: 1.6;"><li style="line-height: 1.6;">git branch 分支名【创建一个分支，创建分支相当于对主干进行克隆，主干文件有什么，分支中就有什么】</li>
+  <li style="line-height: 1.6;">git branch【查看所有分支】</li>
+  <li style="line-height: 1.6;">git checkout 分支名【切换分支】</li>
+  <li style="line-height: 1.6;">git checkout master【切换回主干（！切换回之前，要将更改的文件提交到历史区！）】</li>
+  <li style="line-height: 1.6;">git merge 分支名【将分支的代码合并到主干上】</li>
+  </ul>
+</blockquote></div><center style="display:none !important;visibility:collapse !important;height:0 !important;white-space:nowrap;width:100%;overflow:hidden">%23%23GIT%0A**%u5E38%u89C1%u7684Linux%u547D%u4EE4**%0A%3E%20-%20mkdir%20xxx%u3010%u521B%u5EFA%u6587%u4EF6%u5939%uFF0C%u547D%u540D%u4E3AXXX%u3011%0A%3E%20-%20touch%20xxx.txt%u3010%u521B%u5EFA%u683C%u5F0F%u4E3Atxt%u7684%u6587%u4EF6%uFF0C%u547D%u540D%u4E3AXXX%u3011%0A%3E%20-%20cd%20xxx%u3010%u8FDB%u5165xxx%u6587%u4EF6%u5939%u3011%0A%3E%20-%20cd%20../%u3010%u8FD4%u56DE%u4E0A%u4E00%u7EA7%u76EE%u5F55%u3011%0A%3E%20-%20cd%20/%u3010%u8FD4%u56DE%u6839%u76EE%u5F55%u3011%0A%3E%20-%20cd%20../../%u3010%u8FD4%u56DE%u4E0A%u4E00%u7EA7%u7684%u4E0A%u4E00%u7EA7%u3011%0A%3E%20-%20vi%20xxx.txt%u3010%u8FDB%u5165%u6587%u4EF6%u7F16%u8F91%u754C%u9762%u3011%u2192%20%u8F93%u5165%u82F1%u6587%u5B57%u6BCD%u201C%20i%20%u201D%uFF0C%u7136%u540E%u8FDB%u884C%u7F16%u8F91%20%u2192%20%u7F16%u8F91%u5B8C%u6210%u540E%uFF0CCTRL+c%uFF0C%u9000%u51FA%u7F16%u8F91%u72B6%u6001%20%u2192%20%u8F93%u5165%u201C%20%3Awq%20%u201D%uFF0C%u4FDD%u5B58%u5E76%u9000%u51FA%u7F16%u8F91%u754C%u9762%0A%3E%20-%20cat%20xxx.txt%u3010%u67E5%u770B%u6587%u4EF6%u5185%u5BB9%u3011%0A%0A**git%u7684%u5E38%u7528%u547D%u4EE4**%0A%3E%20-%20git%20init%u3010%u521D%u59CB%u5316%u4E00%u4E2A%u672C%u5730%u4ED3%u5E93%u3011%0A%3E%20-%20git%20config%20--list%u3010%u67E5%u770B%u672C%u5730%u4ED3%u5E93%u7684%u57FA%u672C%u914D%u7F6E%u4FE1%u606F%u3011%0A%3E%20-%20git%20config%20--global%20user.name%20%22xxx%22%u3010%u914D%u7F6E%u5168%u5C40%u7684%u7528%u6237%u540D%u3011%0A%3E%20-%20git%20config%20--global%20user.email%20%22xxx%22%u3010%u914D%u7F6E%u5168%u5C40%u7684%u7528%u6237%u90AE%u7BB1%u3011%0A%3E%20-%20clear%u3010%u6E05%u5C4F%u3011%0A%3E%20-%20git%20status%u3010%u67E5%u770B%u5F53%u524D%u4ED3%u5E93%u6587%u4EF6%u72B6%u6001%uFF08%u5DE5%u4F5C%u533A%u7684%u6587%u4EF6%u662F%u7EA2%u8272%uFF0C%u6682%u5B58%u533A%u7684%u6587%u4EF6%u662F%u7EFF%u8272%uFF09%u3011%0A%3E%20-%20git%20rm%20--cached%20xxx.txt%u3010%u5220%u9664%u6682%u5B58%u533A%u5BF9%u5E94%u7684%u6587%u4EF6%u3011%0A%3E%20-%20git%20add%20.%u3010%u628A%u5DE5%u4F5C%u533A%u7684%u6587%u4EF6%u63D0%u4EA4%u5230%u6682%u5B58%u533A%u3011%0A%3E%20-%20git%20commit%20-m%20%22%u5907%u6CE8%22%u3010%u628A%u6682%u5B58%u533A%u7684%u6587%u4EF6%u63D0%u4EA4%u5230%u5386%u53F2%u533A%uFF1B%u6BCF%u6B21%u5411%u5386%u53F2%u533A%u63D0%u4EA4%u6587%u4EF6%u7684%u65F6%u5019%uFF0C%u90FD%u4F1A%u4EA7%u751F%u4E00%u4E2A%u552F%u4E00%u7684%u7248%u672C%u53F7%u3011%0A%3E%20-%20git%20diff%u3010%u5BF9%u6BD4%u5DE5%u4F5C%u533A%u548C%u6682%u5B58%u533A%u7684%u6587%u4EF6%u5185%u5BB9%u3011%0A%3E%20-%20git%20checkout%20xxx.txt%u3010%u628A%u6682%u5B58%u533A%u7684%u6587%u4EF6%u8986%u76D6%u5DE5%u4F5C%u533A%uFF08%u6682%u5B58%u533A%u7684%u6587%u4EF6%u4E0D%u53D8%uFF09%u3011%0A%3E%20-%20git%20log%u3010%u67E5%u770B%u5386%u53F2%u533A%u6587%u4EF6%u7684%u7248%u672C%u53F7%u3011%0A%3E%20-%20git%20diff%20--cached%u3010%u5BF9%u6BD4%u6682%u5B58%u533A%u548C%u5386%u53F2%u533A%u7684%u6587%u4EF6%u5185%u5BB9%u3011%0A%3E%20-%20git%20diff%20master%u3010%u5BF9%u6BD4%u5DE5%u4F5C%u533A%u548C%u5386%u53F2%u533A%u7684%u6587%u4EF6%u5185%u5BB9%u3011%0A%3E%20-%20git%20reset%20--hard%20%u7248%u672C%u53F7%u3010%u5C06%u4E09%u4E2A%u533A%u7684%u6587%u4EF6%u7EDF%u4E00%u4E3A%u8BE5%u7248%u672C%u53F7%u5BF9%u5E94%u7684%u7248%u672C%u6587%u4EF6%u3011%0A%3E%20-%20git%20commit%20-a%20-m%20%22%u5907%u6CE8%22%u3010%u8FDE%u7EED%u6267%u884C%u5DE5%u4F5C%u533A%u63D0%u4EA4%u5230%u6682%u5B58%u533A%u3001%u6682%u5B58%u533A%u63D0%u4EA4%u5230%u5386%u53F2%u533A%uFF08%u8BE5%u547D%u4EE4%u53EA%u80FD%u7528%u4E8E%u63D0%u4EA4%u8FC7%u7684%u6587%u4EF6%uFF09%u3011%0A%3E%20-%20git%20reflog%u3010%u67E5%u770B%u6240%u6709%u7684%u7248%u672C%u53F7%u3011%0A%0A**git%u6709%u4E09%u4E2A%u533A**%0A%3E%20-%20%u5DE5%u4F5C%u533A%0A%3E%20-%20%u6682%u5B58%u533A%0A%3E%20-%20%u5386%u53F2%u533A%0A%0A**git%u7684%u5206%u652F**%0A%3E%20-%20git%20branch%20%u5206%u652F%u540D%u3010%u521B%u5EFA%u4E00%u4E2A%u5206%u652F%uFF0C%u521B%u5EFA%u5206%u652F%u76F8%u5F53%u4E8E%u5BF9%u4E3B%u5E72%u8FDB%u884C%u514B%u9686%uFF0C%u4E3B%u5E72%u6587%u4EF6%u6709%u4EC0%u4E48%uFF0C%u5206%u652F%u4E2D%u5C31%u6709%u4EC0%u4E48%u3011%0A%3E%20-%20git%20branch%u3010%u67E5%u770B%u6240%u6709%u5206%u652F%u3011%0A%3E%20-%20git%20checkout%20%u5206%u652F%u540D%u3010%u5207%u6362%u5206%u652F%u3011%0A%3E%20-%20git%20checkout%20master%u3010%u5207%u6362%u56DE%u4E3B%u5E72%uFF08%uFF01%u5207%u6362%u56DE%u4E4B%u524D%uFF0C%u8981%u5C06%u66F4%u6539%u7684%u6587%u4EF6%u63D0%u4EA4%u5230%u5386%u53F2%u533A%uFF01%uFF09%u3011%0A%3E%20-%20git%20merge%20%u5206%u652F%u540D%u3010%u5C06%u5206%u652F%u7684%u4EE3%u7801%u5408%u5E76%u5230%u4E3B%u5E72%u4E0A%u3011</center><br/></span>
+</div></body></html> 
